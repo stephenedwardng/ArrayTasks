@@ -34,7 +34,7 @@ var arrayTasks = {
 
 	square: function (arr) {
 
-		squaredArray = [];
+		var squaredArray = [];
 		
 		arr.forEach(function(element) {
 			squaredArray.push(element * element);
@@ -48,8 +48,8 @@ var arrayTasks = {
 	},
 
 	findDuplicates: function (arr) {
-		stepArray = [];
-		dupArray = [];
+		var stepArray = [];
+		var dupArray = [];
 		
 		arr.forEach(function(element) {
 
@@ -63,9 +63,16 @@ var arrayTasks = {
 		return dupArray;
 	},
 
-	// removeAndClone: function (arr, valueToRemove) {
-		
-	// },
+	removeAndClone: function (arr, valueToRemove) {
+		var cloneArray = arr;
+
+		arr.forEach(function(element) {
+			if (element === valueToRemove) {
+				cloneArray.splice(element);
+			}
+		})
+		return cloneArray;
+	},
 
 	// findIndexesOf: function (arr, itemToFind) {
 		

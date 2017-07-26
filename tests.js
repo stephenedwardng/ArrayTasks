@@ -30,7 +30,7 @@ describe('Array tasks', function () {
 		assert.deepEqual([4, 5, 5], arrayTasks.findDuplicates(arr))
 	})
 
-	xit('should remove all instances of a value from an array, returning a new array', function () {
+	it('should remove all instances of a value from an array, returning a new array', function () {
 		var arr = [1, 2, 3, 1, 4, 5, 1]
 		assert.deepEqual([2, 3, 4, 5], arrayTasks.removeAndClone(arr, 1))
 	})
