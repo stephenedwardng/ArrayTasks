@@ -43,9 +43,9 @@ var arrayTasks = {
 		return squaredArray;
 	},
 
-	// sum: function (arr) {
-		
-	// },
+	sum: function (arr) {
+		return arr.reduce((a, b) => a + b, 0);
+	},
 
 	// findDuplicates: function (arr) {
 		
