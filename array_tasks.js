@@ -1,17 +1,8 @@
 var arrayTasks = {
 
 	concat: function (arr1, arr2) {
+		
 		return arr1.concat(arr2);
-
-		// arr1.forEach(function(element){
-		// 	concatenatedArray.push(element);
-		// })
-
-		// arr2.forEach(function(element){
-		// 	concatenatedArray.push(element);
-		// })
-
-		// return concatenatedArray;
 
 	},
 
@@ -41,9 +32,16 @@ var arrayTasks = {
 		return this.concat(arr1, arr2);
 	},
 
-	// square: function (arr) {
+	square: function (arr) {
+
+		squaredArray = [];
 		
-	// },
+		arr.forEach(function(element) {
+			squaredArray.push(element * element);
+		})		
+
+		return squaredArray;
+	},
 
 	// sum: function (arr) {
 		
