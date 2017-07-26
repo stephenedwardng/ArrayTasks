@@ -35,7 +35,7 @@ describe('Array tasks', function () {
 		assert.deepEqual([2, 3, 4, 5], arrayTasks.removeAndClone(arr, 1))
 	})
 
-	xit('should find all occurences of a value, returning an array of index positions', function () {
+	it('should find all occurences of a value, returning an array of index positions', function () {
 		var arr = [1, 2, 1, 3, 4, 1, 5]
 		assert.deepEqual([0, 2, 5], arrayTasks.findIndexesOf(arr, 1))
 	})

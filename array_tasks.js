@@ -64,19 +64,27 @@ var arrayTasks = {
 	},
 
 	removeAndClone: function (arr, valueToRemove) {
-		var cloneArray = arr;
+		var cloneArray = [];
 
 		arr.forEach(function(element) {
-			if (element === valueToRemove) {
-				cloneArray.splice(element);
+			if (element !== valueToRemove) {
+				cloneArray.push(element);
 			}
 		})
 		return cloneArray;
 	},
 
-	// findIndexesOf: function (arr, itemToFind) {
-		
-	// },
+	findIndexesOf: function (arr, itemToFind) {
+		var indexArray = [];
+
+		var index = arr.indexOf(itemToFind);
+		while (index != -1) {
+		  indexArray.push(index);
+		  index = arr.indexOf(itemToFind, index + 1);
+		}
+
+		return indexArray;
+	},
 
 	// sumOfAllEvenNumbersSquared: function (arr) {
 		
