@@ -47,9 +47,21 @@ var arrayTasks = {
 		return arr.reduce((a, b) => a + b, 0);
 	},
 
-	// findDuplicates: function (arr) {
+	findDuplicates: function (arr) {
+		stepArray = [];
+		dupArray = [];
 		
-	// },
+		arr.forEach(function(element) {
+
+			if (stepArray.includes(element)) {
+				dupArray.push(element);
+			}
+
+			stepArray.push(element);
+		})		
+
+		return dupArray;
+	},
 
 	// removeAndClone: function (arr, valueToRemove) {
 		

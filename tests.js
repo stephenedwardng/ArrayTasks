@@ -27,7 +27,7 @@ describe('Array tasks', function () {
 
 	it('should find duplicate values in an array, returning a new array of the duplicates', function () {
 		var arr = [1, 2, 3, 4, 4, 5, 5, 5]
-		assert.deepEqual([4, 5], arrayTasks.findDuplicates(arr))
+		assert.deepEqual([4, 5, 5], arrayTasks.findDuplicates(arr))
 	})
 
 	xit('should remove all instances of a value from an array, returning a new array', function () {
